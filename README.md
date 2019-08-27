@@ -139,6 +139,15 @@ The `steps!` macro generates a function named `steps` with all the declared step
 it is defined in. Ordinarily you would create something like a `steps/` directory to hold your 
 steps modules instead of inline like the given example.
 
+# Running the Tests
+
+`cucumber-rust` is integrated with the `cargo test` command.  Run the tests with:
+
+```
+$ cargo test
+```
+
+# Gherkin Support 
 The full gamut of Cucumber's Gherkin language is implemented by the 
 [gherkin-rust](https://github.com/bbqsrc/gherkin-rust) project. Most features of the Gherkin 
 language are parsed already and accessible via the relevant structs.
